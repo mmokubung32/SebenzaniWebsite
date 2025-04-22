@@ -258,7 +258,7 @@
         
         .service-card img {
             width: 100%;
-            height: 200px;
+            height: 240px;
             object-fit: cover;
         }
         
@@ -288,6 +288,13 @@
             gap: 50px;
             align-items: center;
         }
+
+        .about-content2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: top;
+        }
         
         .about-text h2 {
             font-size: 2.5rem;
@@ -299,6 +306,7 @@
             margin-bottom: 20px;
         }
         
+
         .about-image {
             position: relative;
         }
@@ -337,6 +345,11 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
+        .center-item {
+            grid-column: 1 / -1; /* Span the whole row */
+            justify-self: center; /* Center the item horizontally */
+            max-width: 250px; /* Match the item width */
+          }
         
         .team-member {
             background-color: var(--black);
@@ -617,12 +630,15 @@
             .service-card {
                 margin-bottom: 20px;
             }
+            
+        }
+        .h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
         }
     </style>
-    <script>
-        window.location.href = "maintenance.html";
-    </script>
-
 </head>
 <body>
     <!-- Header -->
@@ -672,7 +688,7 @@
             
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="VIP Protection">
+                    <img src="VIP2.PNG" alt="VIP Protection">
                     <div class="service-content">
                         <h3>VIP Protection</h3>
                         <p>We specialize in the protection of high-profile individuals, celebrities, musical artists, professional athletes, politicians, diplomats, royalty and corporate executives.</p>
@@ -681,7 +697,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Static Guarding">
+                    <img src="staticG.jpg" alt="Static Guarding" class="responsive-image">
                     <div class="service-content">
                         <h3>Static Guarding</h3>
                         <p>Professional security personnel positioned at fixed locations to protect property, assets, and people with round-the-clock vigilance and rapid response capabilities.</p>
@@ -690,7 +706,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Retail Security">
+                    <img src="mall2.jpg" alt="Retail Security">
                     <div class="service-content">
                         <h3>Retail Security</h3>
                         <p>One of our popular services due to the high risk of theft within retail. We provide the easiest solution to prevent theft from retail stores with trained personnel.</p>
@@ -699,7 +715,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="CCTV Surveillance">
+                    <img src="cctv.jpg" alt="CCTV Surveillance">
                     <div class="service-content">
                         <h3>CCTV Surveillance</h3>
                         <p>Advanced monitoring systems with real-time alerts and professional monitoring staff to ensure comprehensive coverage and quick response to security breaches.</p>
@@ -708,7 +724,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Body Guarding">
+                    <img src="bodygu.png" alt="Body Guarding">
                     <div class="service-content">
                         <h3>Body Guarding</h3>
                         <p>Professional close protection officers to keep you, your friends, and your family safe with trained personnel who are prepared for any security situation.</p>
@@ -717,7 +733,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Forensic Investigation">
+                    <img src="forensic2.png" alt="Forensic Investigation">
                     <div class="service-content">
                         <h3>Forensic Investigation</h3>
                         <p>Professional investigation services for corporate and private clients, with detailed analysis and reporting to resolve security incidents and prevent future occurrences.</p>
@@ -729,23 +745,87 @@
     </section>
     
     <!-- About Section -->
-    <section class="about" id="about">
+    <<section class="about" id="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Sebenzani Global Security</h2>
+                    <h2 class="h2">About Sebenzani Global Security</h2>
                     <p>Sebenzani Global Security Services is positioning itself to be always abreast of time and technological developments to be always ready to enhance service delivery of any kind.</p>
                     <p>We have built a reputation on our sophisticated level of professionalism, the creation and acute judgment. You can rely on a dependable and consistent standard of service for physical security.</p>
                     <p>Our mission is to stay firmly committed to only work with partners that share our client service ethic. We collaborate with other service providers and innovative technology and software partners to bring the core competencies necessary to craft turnkey solutions.</p>
-                    <a href="#" class="btn">Learn More About Us</a>
+                    
                 </div>
                 
                 <div class="about-image">
-                    <img src="SebenzaniSecurityTeam.png" alt="Sebenzani Security Team">
+                    <img src="Qual4.png" alt="Sebenzani Security Team">
                 </div>
             </div>
         </div>
+    
+        <div class="container">
+            
+                <div class="about-text">
+                    <h2 class="h2">Our Objectives</h2>
+                    <ul>
+                        <li>Fully understand the client's requirements and to advise, tailor and deliver a cost-effective best practice solution.</li>
+                        <li>Develop and implement processes.</li>
+                        <li>Define responsibilities to support the operation and monitoring of these processes.</li>
+                        <li>Comply with the requirements of the quality management system and continually improve its effectiveness.</li>
+                        <li>Establish and communicate quality objectives and targets company personnel.</li>
+                        <li>Measure achievements against objectives and act as needed.</li>
+                        <li>Develop employee skills and increase their contribution through effective training.</li>
+                        <li>To assist our government to pursuit of a Crime Free South Africa.</li>
+                        <li>To ensure that the private sector, trades in crime free environment conducive to high productivity and high profit margins.</li>
+                    </ul>
+                </div>
+
+            
+        </div>    
+        <div class="container">
+            
+                <div class="about-text">
+                    <h2 class="h2">Secondary Objectives</h2>
+                    
+                    <p>With South Africa indicating trends to privatize most of its services traditionally performed by State Apparatus which is not only unique to South Africa, but has become a global trend, especially in the developed countries where most services are PAY-PAIR-SERVICE to ensure clients' satisfaction and efficiency.</p>
+                    
+                    <p>Sebenzani Global Security Services is positioning itself to be always abreast of time and technological developments to be always ready to address our clientele needs of any kind.</p>
+                    
+                    <p>Amongst other things this entity seeks to address, is to narrow a gap that currently exists between law enforcement agencies owned by the State, and those that are privately owned. Government has acknowledged many years ago that the current security ratio status of "1 police officer is 10 000 people" it's highly pathetic in South Africa where crime rate seems to be escalating every second, hence the Government supports the growing number of Security Companies in the country. However, that supports shall prove to be futile if man on the streets do not understand the importance of co-existing and co-operation.</p>
+                </div>
+            
+        </div>
+    
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="h2">Health and Safety</h2>
+                    <h3>Health and Safety Policy:</h3>
+                    <p>The following is a statement from the company's general Health and Safety policy in accordance with Section 2 of the Health and Safety at work etc. Act 1974.</p>
+                    
+                    <p>It is the policy of Sebenzani Security Global Services to ensure so far as in reason working to the ably practicable the health and, safety and Welfare of all the employees working for the company or other persons who may be affected by our undertakings.</p>
+                    
+                    <p>Sebenzani Global Security Services acknowledges that the key to successful health and safety management requires an effective policy, organization and arrangements, which reflects the commitment of senior management. To sustain that commitment, we will continually measure, monitor and revise where necessary, an annual plan to ensure that health and safety standards are adequate.</p>
+                    
+                    <p>The management of Sebenzani Global Security Services looks upon the promotion of health and safety measures as a mutual objective for themselves and their employees at all levels. It is therefore the policy of the management to do all that is practicable to prevent personal injury and damage to property.</p>
+                    
+                    <p>Also, the company aims to protect everyone, including all visitors and members of the public, insofar as they encounter the company or its activities, from any foreseeable hazard of danger. The company will ensure continued consultation with the workforce to enable all viewpoints and recommendations to be discussed at regular intervals. The company will ensure a systematic approach to identifying hazards, assessing the risk, determining suitable and sufficient control measures and informing employees of the correct procedures.</p>
+                    
+                    <p>The company will provide, so far as is reasonably practicable, safe handling of materials and substances, the provision of adequate safety equipment and ensure that appropriate information, instruction, training and supervision is given.</p>
+                    
+                    <p>The company regards all health and safety legislation as the minimum and expects management to achieve their managerial targets without compromising health and safety.</p>
+                    <a href="#" class="btn">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="medical2.png" alt="Medical">
+                </div>
+                
+            </div>
+        </div>
     </section>
+
+
+
+    
     
     <!-- Leadership Section -->
     <section class="leadership">
@@ -756,7 +836,7 @@
             
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="AndrewMD.png" alt="Andrew Mdooley">
+                    <img src="AndrewMD4.1.png" alt="Andrew Mdooley">
                     <div class="team-info">
                         <h3>Andrew Mdooley</h3>
                         <span>Group Founder and Managing Director</span>
@@ -765,7 +845,7 @@
                 </div>
                 
                 <div class="team-member">
-                    <img src="Mkatini.png" alt="Livanova Mkatini">
+                    <img src="Mkatini4.png" alt="Livanova Mkatini">
                     <div class="team-info">
                         <h3>Livanova Mkatini</h3>
                         <span>Chief Executive: Finance, Corporate Strategy and Key Accounts</span>
@@ -774,7 +854,7 @@
                 </div>
                 
                 <div class="team-member">
-                    <img src="Kajal.png" alt="Kajal Munkamy">
+                    <img src="Kajal4.png" alt="Kajal Munkamy">
                     <div class="team-info">
                         <h3>Kajal Munkamy</h3>
                         <span>Chief Operations Officer</span>
@@ -782,12 +862,22 @@
                     </div>
                 </div>
                 
+                
                 <div class="team-member">
-                    <img src="benny.png" alt="Benny Makwela">
+                    <img src="benny4.png" alt="Benny Makwela">
                     <div class="team-info">
                         <h3>Benny Makwela</h3>
                         <span>Head of VIP Protection</span>
                         <p>Encapsulates a suite of security measures designed to protect individuals who are at elevated risk of harm.</p>
+                    </div>
+                </div>
+
+                <div class="team-member center-item">
+                    <img src="Sizwe3.png" alt="SIZWE KHOZA">
+                    <div class="team-info">
+                        <h3>SIZWE KHOZA</h3>
+                        <span>Head of Guarding</span>
+                        <p>Ensures personal safety through risk assessments, safety protocols, and a strong culture focused on protection and productivity.</p>
                     </div>
                 </div>
             </div>
@@ -803,7 +893,7 @@
             
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Banking Sector">
+                    <img src="banking.jfif" alt="Banking Sector">
                     <div class="service-content">
                         <h3>Banking</h3>
                         <p>Specialized security solutions for financial institutions, including ATM protection, branch security, and cash-in-transit services.</p>
@@ -811,7 +901,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Retail Sector">
+                    <img src="retail.jpg" alt="Retail Sector">
                     <div class="service-content">
                         <h3>Retail</h3>
                         <p>Comprehensive security for shopping malls, retail outlets, and shopping centers to prevent theft and ensure customer safety.</p>
@@ -819,7 +909,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Property Sector">
+                    <img src="property.jpg" alt="Property Sector">
                     <div class="service-content">
                         <h3>Property</h3>
                         <p>Security services for residential complexes, office buildings, and commercial properties to protect assets and residents.</p>
@@ -827,7 +917,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Energy Sector">
+                    <img src="Energy2.jfif" alt="Energy Sector">
                     <div class="service-content">
                         <h3>Energy</h3>
                         <p>Protection for power stations, solar plants, and energy infrastructure against theft, vandalism, and unauthorized access.</p>
@@ -835,7 +925,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Education Sector">
+                    <img src="PIC1.png" alt="Education Sector">
                     <div class="service-content">
                         <h3>Education</h3>
                         <p>Safety and security solutions for schools, universities, and educational institutions to create safe learning environments.</p>
@@ -843,11 +933,30 @@
                 </div>
                 
                 <div class="service-card">
-                    <img src="/api/placeholder/400/300" alt="Logistics Sector">
+                    <img src="logistic.jpg" alt="Logistics Sector">
                     <div class="service-content">
                         <h3>Logistics</h3>
                         <p>Security services for warehousing, distribution centers, and logistics operations to prevent cargo theft and ensure supply chain integrity.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Projects" id="projects">
+        <div class="container">
+            <div class="about-content2">
+                <div class="about-text">
+                    <h2 class="h2">Projects</h2>
+                    <p>Sebenzani has established itself as a trusted industry partner with an extensive project portfolio spanning both public and private sectors.</p>
+                    <p>We take pride in our collaborations with leading government departments, multinational corporations, and renowned foundations that have consistently chosen us for our expertise and excellence in delivery.</p>
+                    <p>Our strategic partnerships with key organizations in infrastructure, energy, transportation, and development sectors showcase our versatility and commitment to driving meaningful impact across South Africa.</p>
+                    <p>Through these valuable relationships, we continue to build our reputation as a reliable partner dedicated to achieving exceptional results for our clients.</p>
+                    <a href="#" class="btn">Learn More About Us</a>
+                </div>
+                
+                <div class="about-image">
+                    <img src="ProPort1.png" alt="Sebenzani Security Team">
                 </div>
             </div>
         </div>
